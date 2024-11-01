@@ -1,0 +1,76 @@
+.services {
+    padding: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.services-item {
+    padding: 7px;
+    font-style: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: #2c3e50;
+    border: 1px solid gray;
+    width: 21%;
+    border-radius: 60px;
+    overflow: hidden;
+}
+
+.services-item i {
+    font-size: 40px;
+}
+
+.bi-truck,
+.bi-gift,
+.bi-send,
+.bi-arrow-clockwise {
+    transition: 0.5s;
+}
+
+.services-item:hover .bi-truck {
+    translate: 6rem;
+}
+
+
+.services-item:hover .bi-gift {
+    scale: 1.3;
+}
+
+.services-item:hover .bi-arrow-clockwise {
+    rotate: 360deg;
+}
+
+
+.services-item:hover .bi-send {
+    transform: translate(4rem, -2rem);
+}
+
+@media (max-width: 920px) {
+    .services {
+        flex-wrap: wrap;
+        padding: 30px 15px;
+    }
+    .services-item {
+        width: 45%;
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 520px) {
+    /* .services {
+        flex-wrap: wrap;
+        padding: 30px 15px;
+    } */
+    .services-item {
+        width: 90%;
+        /* margin-bottom: 20px; */
+        font-size: 25px;
+    }
+    .services-item i {
+        font-size: 50px;
+    }
+}
+
